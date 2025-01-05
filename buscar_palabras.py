@@ -23,7 +23,6 @@ def buscar_palabras(textos: list[str], palabras_clave: list[str]) -> dict:
 
     return resultado
 
-# Ejemplo de uso
 def main():
     try:
         textos = [
@@ -31,7 +30,7 @@ def main():
             "Otro texto diferente con palabras clave.",
             "La búsqueda en Python es muy flexible.",
         ]
-        palabras_clave = ["awd", "Python", "clave"]  # Ejemplo con error: "awd" sin definir
+        palabras_clave = ["awd", "Python", "clave"]  # MODIFICAR EN PALABRAS_CLAVE Y TEXTOS PARA COMPILAR 
 
         if not all(isinstance(texto, str) for texto in textos):
             raise ValueError("Todos los elementos de la lista de textos deben ser cadenas de texto.")
